@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    line-height: 1.7;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+ul{
+    list-style: none;
+
+}
+.hero{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.navbar{
+    width: 100%;
+    padding: 18px 0;
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1e293b;
+    max-width: 12000px;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+.navbar img{
+    font-size: 26px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+.nav-links a{
+    color: #cbd5e1;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.hero{
+    min-height: 40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f1729) , #172554;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.skills-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.skills-track {
+    display: inline-flex;
+    gap: 45px;
+    animation: moveSkills 15s linear infinite;
+}
+
+.skills-track span {
+    font-size: 22px;
+    color: white;
+    flex-shrink: 0;
+}
+
+@keyframes moveSkills {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.heading{
+    text-align: center;
+    padding:20px;
+    margin: auto;
+    font-size: 50px;
+
+}
+.project-p{
+    line-height: 5;
+    text-size-adjust: 20px;
+}
+.project-heading{
+    font-size: 30px;
+    padding: 30px;
+}
+
+footer{
+    background: #020617;
+    padding:30px 0 20px;
+}
+.story{
+    font-size: 20px;
+    padding: 20px;
+}
+.contact{
+    background: #111827;
+
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #334155;
+    border-radius:8px ;
+    background: #0f172a;
+    color: white;
+    outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border: #38bdf8;
+    
+}
+
+.button:hover{
+    border-radius: none;
+    border: silver;
+    transform: translate(.2px);
+}
+.button{
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .nav-links{
+        gap: 15px;
+    }
+    .hero{
+        font-size: 42px;
+    }
+    footer{
+        text-align: center;
+    }
+}
+@media(max-width :500px){
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+    }
+    .hero-h1{
+        font-size: 32px;
+
+    }
+    .hero-p{
+        font-size: 16px;
+    }
+
+}
